@@ -94,7 +94,8 @@ const Get_Single_Student = async (req,res) => {
 
 
 
-const Get_Single_Student_Field = async (req, res) => {
+const Get_Single_Student_Field = 
+async (req, res) => {
   try {
     const student = await Student.findById(req.params.id);
     if (!student) {
